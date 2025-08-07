@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'sterion';
+    src: url(Sterion-BF660d833eb3cc6.ttf);
+}
+@font-face {
+    font-family: 'pixl';
+    src: url(PIX-L___.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #f4f4f4;
+        overflow: hidden;
+        font-family: 'sterion';
+        margin: 15px;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px 20px ;
+
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    margin: auto;
+    margin-right:auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin: 0px 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+
+    
+}
+ 
+.card-title{
+  text-align: center;
+  color:#404040;
+}
+.card-body{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#anchor{
+    background-color: black;
+    border: none;
+    border: 1bx solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+}
+#anchor:hover{
+    background-color: white;
+    color: black;
+    transition: .7s;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#anchor:focus{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+
+.nav{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    
+}
+ .nav #ggg{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+ #ggg::after{
+    content: "";
+    background-color: black;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    position: absolute;
+}
+#ggg:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+h1 {
+    position:absolute; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: -1; 
+    color: rgb(32, 32, 32);
+    font-size: 8rem; 
+    text-align: center;
+    font-family:'pixl';
+}
+
+.spline {
+    width: 100vw;
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+.spline iframe {
+    width: 100%;
+    height: 100%;
+    border: none; 
+    display: block;
+    position: relative;
+    z-index: 1;
+}
